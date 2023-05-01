@@ -1,0 +1,145 @@
+/* 
+font-family: 'Calistoga', cursive;
+font-family: 'Changa One', cursive;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Playfair Display', serif;
+
+*/
+body {
+    border: 30px solid #211b1b;
+    background-color: #e0dcd2;
+}
+header {width: 1200px; margin:0 auto;}
+header nav {text-align: center; line-height: 100px;}
+header nav a {font-family: 'Playfair Display', serif; font-size: 2rem; padding-right: 50px; text-transform: capitalize; }
+header nav a:last-child {padding: 0;}
+/* 헤드끝 */
+main .h_container {position: relative; width: 100%; height: 100vh;}
+main .h_container .box1 {
+    width: 600px; height: 280px;
+    background: #211b1b; display: block;
+    position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%);
+    text-align: center;
+    }
+main .h_container .box1 p:nth-child(1) {color: #e0dcd2; font-family: 'Changa One', cursive; font-size: 5rem;}
+main .h_container .box1 p:nth-child(2) {color: #e0dcd2; font-family: 'Changa One', cursive; font-size: 4rem;}
+main .h_container .box1 p:nth-child(3) {color: #e0dcd2; font-family: 'Changa One', cursive; font-size: 3rem;margin-top:3px;}
+main .h_container .box1 p:nth-child(4) {color: #e0dcd2; font-family: 'Changa One', cursive; font-size: 2rem;margin-top: 10px;}
+main .h_container .box1 p:nth-child(5) {color: #e0dcd2; font-family: 'Changa One', cursive; font-size: 1.5rem; margin-top: 10px;}
+main .h_container > p {
+    font-family: 'Playfair Display', serif; font-size: 1.6rem;
+    text-transform: capitalize;
+    position: absolute; top: 61%; left: 33.7%;
+}
+main .h_container .line1 {
+    width: 50%; height: 1px; 
+    background: #211b1b; display: block;
+    position: absolute; top:40%; left: 0;
+}
+main .h_container .line2 {
+    width: 50%; height: 1px; 
+    background: #211b1b; display: block;
+    position: absolute; top: 50%; right: 0;
+}
+/* 자기소개 */
+main .about_con {
+    position: relative; width: 100%; height: 100vh; display: flex;
+    justify-content: space-between; margin-bottom: 200px;
+}
+main .about_con .box2 {
+    width: 350px; height: 350px;
+    background: #211b1b; display: block;
+    position: absolute; top: 45%; left: 200%; transform: translate(-50%,-50%);
+    text-align: center;
+    position: relative;
+}
+main .about_con .box2 h1 {position: absolute; top:0; left: 0; background-image: url(../images/na.jpg);
+    width: 100%;height: 100%; background-position: center; background-size: cover;
+}
+main .about_con .box2 h2 {
+    position: absolute; color: #fff; font-family: 'Playfair Display', serif; 
+    font-size: 3rem; font-weight: 700;
+    top:0; left: 15%;
+}
+main .about_con .box2 p {
+    position: absolute; color: #fff; 
+    font-family: 'Playfair Display', serif; bottom: 5px; left: 5px; text-align: left;
+}
+main .about_con .line1 {
+    width: 40%; height: 1px; 
+    background: #211b1b; display: block;
+    position: absolute; top:40%; left: 0;
+    z-index: -1;
+}
+main .about_con .name {
+    position: absolute; top:28%; right: 30%;
+}
+main .about_con .name > * {font-family: 'Playfair Display', serif;}
+main .about_con .name h1 {font-size: 2rem; text-transform: uppercase; margin: 10px; font-weight: 900;}
+main .about_con .name h1:nth-of-type(1)::after {
+    content: ''; width: 100%; height: 1px; 
+    display: block; background: #211b1b;
+    margin-top: 20px;
+}
+main .about_con .name p {margin: 10px; font-size: 1rem;}
+main .about_con .name p:nth-of-type(1) {}
+main .about_con .name p:nth-of-type(2) {}
+main .about_con .name p:nth-of-type(3) {}
+main .about_con .name p:nth-of-type(4) {}
+main .about_con .name p:nth-of-type(5) {font-size: 1.5rem; margin-bottom: 20px;}
+main .about_con .name p:nth-of-type(6) {display: flex; flex-flow: row nowrap; align-items: center;}
+main .about_con .name p:nth-of-type(7) {display: flex; flex-flow: row nowrap; align-items: center;}
+main .about_con .name h1:nth-of-type(2) {font-size: 1.5rem;}
+/* 막대 */
+main .about_con .name p:nth-of-type(6) span {margin-left:20px; width: 150px; height: 23px; background: #211b1b; display: inline-block;}
+main .about_con .name p:nth-of-type(6) span::after {
+    width: 90%; background: #d6b6ad; content: ''; display: block; height: 100%;
+}
+main .about_con .name p:nth-of-type(7) span {margin-left:20px; width: 150px; height: 23px; background: #211b1b; display: inline-block;}
+main .about_con .name p:nth-of-type(7) span::after {
+    width: 70%; background: #d6b6ad; content: ''; display: block; height: 100%;
+}
+/* 자기소개 밑부분 */
+main .skill {position: absolute; bottom: 5%; left: 21.5%;display: flex; }
+main .p_1 {display: flex;}
+main .skill2 {}
+main .skill3 {}
+main .skill h1 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.5rem; font-weight: 600; text-transform: uppercase;
+    margin-right: 50px;
+    margin-bottom: 20px;
+
+}
+main .skill p {font-family: 'Playfair Display', serif; line-height: 1.8; text-transform: uppercase; width: 200px;}
+
+/* 자기소개끝 */
+
+/* 컨테이너 333333 */
+main .bnr_con {width: 1200px; margin: 0 auto; height: 100vh;}
+main .bnr_con h1 {
+    writing-mode: vertical-rl; font-family: 'Playfair Display', serif; font-size: 3rem;
+    position:absolute;
+}
+main .bnr_con h1::after {content: ''; width: 1px; height: 420px; background: #211b1b; display: block;}
+
+/* 배너 슬라이드 */
+.swiper_container {display:flex;}
+.swiper {width: 250px;}
+        .swiper .swiper-wrapper {}
+        .swiper .swiper-wrapper .swiper-slide {}
+        .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+
+        /* prev, next */
+        .swiper-button-prev, .swiper-button-next {
+            background: aqua;
+        }
+        /* 그룹용 */
+        .swiper-button-prev {left:0;}
+        .swiper-button-next {right:0;}
+        /* 바깥으로 prev, next를 넣고 싶으면 overflow hidden이 써져있기 떄문에 */
+        /* 포지션으로 겹쳐있는 거니까 left,right등으로 써줌 */
+
+        .wrap {background: rgb(128, 146, 146); height: 312.5px; width: 60%; position: relative; margin: 0 auto;}
+        /* prev와 next를swiper-wrapper바깥에 두고, 전체를 묶는 wrap태그 하나 더 생성해서 이렇게 포지션 주면 next와prev 따라옴   */
+
