@@ -124,22 +124,54 @@ main .bnr_con h1 {
 main .bnr_con h1::after {content: ''; width: 1px; height: 420px; background: #211b1b; display: block;}
 
 /* 배너 슬라이드 */
-.swiper_container {display:flex;}
-.swiper {width: 250px;}
-        .swiper .swiper-wrapper {}
-        .swiper .swiper-wrapper .swiper-slide {}
-        .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+.bnr_con .swiper {
+width: 800px;
+    }
 
-        /* prev, next */
-        .swiper-button-prev, .swiper-button-next {
-            background: aqua;
-        }
-        /* 그룹용 */
-        .swiper-button-prev {left:0;}
-        .swiper-button-next {right:0;}
-        /* 바깥으로 prev, next를 넣고 싶으면 overflow hidden이 써져있기 떄문에 */
-        /* 포지션으로 겹쳐있는 거니까 left,right등으로 써줌 */
+.bnr_con .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
-        .wrap {background: rgb(128, 146, 146); height: 312.5px; width: 60%; position: relative; margin: 0 auto;}
-        /* prev와 next를swiper-wrapper바깥에 두고, 전체를 묶는 wrap태그 하나 더 생성해서 이렇게 포지션 주면 next와prev 따라옴   */
+    .bnr_con .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
 
+/* 카드뉴스 */
+main .card_con {
+    width: 1200px; margin: 0 auto; height: 100vh; 
+}
+main .card_con h1 {
+    font-family: 'Playfair Display', serif; font-size: 3rem; text-align: center;
+    margin-bottom: 100px;
+}
+/* 카드 슬라이드 */
+
+.card_con .swiper {
+    width: 100%;
+}
+
+.card_con .swiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .card_con .swiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+/* 카드 슬라이드 끝 */
